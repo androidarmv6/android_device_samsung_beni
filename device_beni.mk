@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm7x27-common/ramdisk/ueventd.msm7x27.rc:root/ueventd.gt-s5670board.rc \
     device/samsung/beni/ramdisk/BENI.rle:root/BENI.rle
 
+## Build the ath6kl-compat driver
+BOARD_WLAN_DEVICE := ath6kl_compat
+
 # Inherit products (Most specific first)
 # beni blobs > samsung common(device/vendor) > other blobs
 $(call inherit-product, vendor/samsung/beni/vendor_blobs.mk)
