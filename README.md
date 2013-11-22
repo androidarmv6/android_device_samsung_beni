@@ -20,7 +20,8 @@ Then to sync up:
 Build your device:
 
     source build/envsetup.sh
-    brunch beni
+    lunch cm_beni-userdebug
+    mka-bacon
 
 Flash ZIP:
 
