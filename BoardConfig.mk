@@ -27,6 +27,7 @@ TARGET_OTA_ASSERT_DEVICE := beni,GT-S5670
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
+BOARD_CAMERA_5MP := true 
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/beni/bluetooth
