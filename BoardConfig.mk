@@ -21,7 +21,11 @@ include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := beni
-TARGET_KERNEL_CONFIG := cyanogenmod_beni_defconfig
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+	TARGET_KERNEL_CONFIG := cyanogenmod_beni_defconfig
+else
+	TARGET_KERNEL_CONFIG := cyanogenmod_beni_recovery_defconfig
+endif
 TARGET_OTA_ASSERT_DEVICE := beni,GT-S5670
 
 ## Recovery
